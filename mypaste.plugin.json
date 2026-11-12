@@ -1,0 +1,32 @@
+{
+  "manifestVersion": 3,
+  "id": "mypaste.format-typescript",
+  "name": "TypeScript Format",
+  "version": "3.0.2",
+  "kind": "command",
+  "description": "使用本机可用工具格式化 TypeScript；依赖缺失或语法错误时保留原文。",
+  "capabilities": [
+    "entity.read"
+  ],
+  "runtime": {
+    "protocolVersion": 2,
+    "mode": "command",
+    "entrypoint": "run"
+  },
+  "commands": [
+    {
+      "id": "format",
+      "title": "格式化 TypeScript",
+      "description": "本机格式化当前文本；失败时不写入剪贴板。",
+      "forms": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "capabilities": [
+        "entity.read"
+      ]
+    }
+  ]
+}
